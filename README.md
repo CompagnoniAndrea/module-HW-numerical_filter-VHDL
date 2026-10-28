@@ -33,8 +33,6 @@ The design is a single entity, `project_reti_logiche`. It keeps the control logi
 
 ### FSM
 
-<p align="center"><img src="docs/fsm.png" alt="FSM diagram" height="700"></p>
-
 The diagram leaves out the two memory-access states, to keep it readable. The memory has one cycle of read latency, so every access goes through **`ASK_MEM` → `WAIT_MEM`**. A `prev_state` register records which state asked for the data, and `WAIT_MEM` uses it to dispatch to the right `READ_*` state. This way it is always clear which read the byte on the bus belongs to.
 
 ### Datapath highlights
@@ -109,9 +107,8 @@ To reproduce the synthesis results, add `src/constraints/clock.xdc` as a constra
 
 ## Authors
 
-- **Andrea Compagnoni** ([@CompagnoniAndrea](https://github.com/CompagnoniAndrea))
+- **Andrea Compagnoni**
 - **Daniele Confalonieri**
-
-<!-- Optional: add one line each describing who did what -->
+- 
 
 *Prova Finale di Reti Logiche, Politecnico di Milano, A.Y. 2024/25.*
