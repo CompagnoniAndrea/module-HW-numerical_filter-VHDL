@@ -1,4 +1,4 @@
-# VHDL Differential Filter Accelerator
+# VHDL Differential Filter
 
 ![VHDL](https://img.shields.io/badge/VHDL-2008-blue) ![Vivado](https://img.shields.io/badge/Vivado-2020.2%2B-orange) ![FPGA](https://img.shields.io/badge/FPGA-Artix--7-red)
 
