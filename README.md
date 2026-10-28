@@ -49,7 +49,7 @@ The diagram leaves out the two memory-access states, to keep it readable. The me
 
 ## Synthesis results
 
-Target: Xilinx Artix-7 (`xc7a200t`), Vivado, 20 ns clock constraint (50 MHz).
+Target: Xilinx Artix-7 (`xc7a200tfbg484-1`), Vivado. Clock constraint: **20 ns (50 MHz)**, set in [`src/constraints/clock.xdc`](src/constraints/clock.xdc).
 
 | Resource | Used | Utilisation |
 |---|---|---|
@@ -86,11 +86,15 @@ Every testbench is self-checking: it compares the memory contents with the expec
 2. Add the files in `src/testbench/` as simulation sources, and set the testbench you want to run as **top**.
 3. Run a **Behavioral Simulation**. If `TEST PASSATO` is not printed, increase the simulation time (Settings → Simulation → `xsim.simulate.runtime`, for example `all`). `tb_stress` needs several ms of simulated time.
 
+To reproduce the synthesis results, add `src/constraints/clock.xdc` as a constraints source, run **Synthesis**, then use `report_utilization` and `report_timing_summary`.
+
 ## Repository structure
 
 ```
 .
 ├── src/
+│   ├── constraints/
+│   │   └── clock.xdc                  # 20 ns clock (50 MHz)
 │   ├── design/
 │   │   └── project_reti_logiche.vhd   # the component
 │   └── testbench/
