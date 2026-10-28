@@ -1,0 +1,20 @@
+# Vivado
+*.jou
+*.log
+*.str
+*.cache/
+*.hw/
+*.ip_user_files/
+*.runs/
+*.sim/
+*.gen/
+*.xpr
+.Xil/
+vivado*.backup.*
+webtalk*
+xsim.dir/
+
+# OS / editor
+.DS_Store
+Thumbs.db
+.vscode/
