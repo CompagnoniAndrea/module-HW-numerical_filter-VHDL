@@ -1,5 +1,7 @@
 # VHDL Differential Filter Accelerator
 
+![VHDL](https://img.shields.io/badge/VHDL-93-blue) ![Vivado](https://img.shields.io/badge/Vivado-2020.2%2B-orange) ![FPGA](https://img.shields.io/badge/FPGA-Artix--7-red)
+
 A hardware module written in VHDL that applies a **configurable differential filter** (order 3 or order 5) to a sequence of 8-bit signed samples stored in memory. It was built for the *Prova Finale di Reti Logiche* (Digital Logic Design final project) at **Politecnico di Milano**, academic year 2024/25.
 
 The component works as a memory-mapped coprocessor. When `START` goes high, it:
