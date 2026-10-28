@@ -109,6 +109,5 @@ To reproduce the synthesis results, add `src/constraints/clock.xdc` as a constra
 
 - **Andrea Compagnoni**
 - **Daniele Confalonieri**
-- 
 
 *Prova Finale di Reti Logiche, Politecnico di Milano, A.Y. 2024/25.*
